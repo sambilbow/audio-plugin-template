@@ -6,7 +6,7 @@
 cmake_minimum_required(VERSION 3.22)
 
 # Sets a few variables, like PROJECT_NAME
-project(WolfSoundAudioPluginTemplate)
+project(SamBilbowAudioPluginTemplate)
 
 # Always use the newest C++ standard on green-field projects if possible.
 set(CMAKE_CXX_STANDARD 23)
@@ -26,8 +26,8 @@ include(cmake/cpm.cmake)
 # This commands downloads AND configures JUCE. It sets up some variables, like JUCE_SOURCE_DIR.
 CPMAddPackage(
     NAME JUCE
-    GIT_TAG 7.0.9
-    VERSION 7.0.9
+    GIT_TAG 7.0.10
+    VERSION 7.0.10
     GITHUB_REPOSITORY juce-framework/JUCE
     SOURCE_DIR ${LIB_DIR}/juce
 )
